@@ -1,0 +1,106 @@
+@import url('variables.css');
+
+/* Wave Canvas - Confiné à l'Intro */
+#waveCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-color)); /* Même fond que l'intro */
+}
+
+.wave-container {
+    background-color: transparent; /* Ou une autre section contenant l'animation */
+}
+
+/* Intro section */
+#intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Permet de positionner les éléments en colonne */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white-color); /* Texte blanc */
+    position: relative;
+    overflow: hidden; /* Assure que l'animation reste dans l'intro */
+}
+
+.intro-content {
+    z-index: 10;
+    color: var(--white-color); /* Texte blanc */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 20px; /* Espace sous la bulle contenant le texte */
+}
+
+#intro h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#intro h2 {
+    font-size: 1.8em;
+    color: var(--accent-color); /* Accent jaune doré */
+}
+
+/* Boutons modernisés */
+.intro-buttons {
+    position: absolute;
+    bottom: 200px; /* Positionne les boutons juste au-dessus de la flèche */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: calc(2vw + 100px); /* Gap dynamique basé sur la largeur de la fenêtre */
+    z-index: 10; /* Assure que les boutons sont au-dessus de la flèche */
+    flex-wrap: wrap; /* Permet aux boutons de passer à la ligne sur les petits écrans */
+}
+
+.intro-buttons .btn {
+    display: inline-block;
+    padding: 12px 74px;
+    font-size: 1.2em;
+    color: var(--text-color); /* Texte couleur */
+    background-color: var(--white-color); /* Fond blanc */
+    border: 2px solid var(--text-color); /* Bordure couleur du texte */
+    border-radius: 50px; /* Boutons arrondis */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    white-space: nowrap; /* Empêche le texte de se briser sur plusieurs lignes */
+}
+
+.intro-buttons .btn:hover {
+    background-color: var(--accent-color); /* Fond jaune doré au survol */
+    color: var(--text-color); /* Texte sombre au survol */
+    transform: translateY(-3px); /* Légère levée au survol */
+}
+
+/* Flèche de défilement */
+.scroll-down-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 5; /* Assure que la flèche est sous les boutons */
+}
+
+.arrow-down {
+    display: block;
+    width: 54px;
+    height: 54px;
+    border-left: 4.5px solid var(--white-color);
+    border-bottom: 4.5px solid var(--white-color);
+    transform: rotate(-45deg);
+    animation: bounce 2s infinite;
+    transition: transform 0.3s ease;
+}
+
+.scroll-down-indicator:hover .arrow-down {
+    transform: rotate(-45deg) translateY(5px);
+}

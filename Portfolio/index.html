@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ingénieur Simulation Numérique</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    
+
+<header>
+    <div class="container">
+        <h1 class="logo">LILYAN TOUSSAINT</h1>
+        <nav>
+            <ul id="nav-carousel" class="nav-list">
+                <li class="nav-item"><a href="#about">À propos</a></li>
+                <li class="nav-item"><a href="#skills">Compétences</a></li>
+                <li class="nav-item"><a href="#education">Parcours</a></li>
+                <li class="nav-item"><a href="#projects">Projets</a></li>
+                <li class="nav-item"><a href="#interests">Hobbies</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+<section id="intro">
+    <div id="waveCanvas"></div>
+    <div class="intro-content">
+        <h1>Bienvenue sur mon portfolio en ligne !</h1>
+        <h2 class="typewriter" id="dynamic-text"></h2>
+    </div>
+    <div class="intro-buttons">
+        <a href="#contact" class="btn">Contact</a>
+        <a href="path/to/CV.pdf" class="btn" target="_blank">CV</a>
+        <a href="https://www.linkedin.com/in/lilyan-toussaint-9a7312159" class="btn" target="_blank">LinkedIn</a>
+    </div>
+    <!-- Flèche pour descendre vers "À propos" -->
+    <a href="#about" class="scroll-down-indicator">
+        <span class="arrow-down"></span>
+    </a>
+</section>
+
+<section id="about" class="section">
+    <div class="container">
+        <h2>À propos de moi</h2>
+        <p>Je m'appelle Lilyan Toussaint, j'ai 25 ans et j'occupe actuellement le poste 
+            d'ingénieur en Simulation Numérique au sein du département Recherche et 
+            Développement chez Water Horizon. Curieux et passionné, je m'investis 
+            régulièrement dans des projets visant à approfondir mes connaissances et 
+            à renforcer mes compétences, tant dans mes domaines d'expertise que dans 
+            l'exploration de nouvelles disciplines.   </p>
+    </div>
+</section>
+
+<section id="skills" class="section">
+    <div class="container">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Travail en équipe</li>
+                    <li>Autonomie</li>
+                    <li>Initiative</li>
+                    <li>Créativité</li>
+                    <li>Autoformation</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Langages de Programmation</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Shell linux</li>
+                    <li>Fortan 90</li>
+                    <li>Latex</li>
+                    <li>Visual Basic for Application</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Domaines</h3>
+                <ul>
+                    <li>Mécanique des fluides mono et diphasique</li>
+                    <li>Thermodynamique et Thermique</li>
+                    <li>Changement de phase</li>
+                    <li>Simulation numérique</li>
+                    <li>Traitement du signale/données</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Outils CAO et mesh</h3>
+                <ul>
+                    <li>Salomé</li>
+                    <li>Blender</li>
+                    <li>GMSH</li>
+                    <li>SnappyHexMesh</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Outils de simulation (CFD et 0D/1D)</h3>
+                <ul>
+                    <li>ANSYS Fluent</li>
+                    <li>OpenFOAM</li>
+                    <li>Code Saturne</li>
+                    <li>Comsol</li>
+                    <li>OpenModelica</li>
+                    <li>Thermolib</li>
+                    <li>Thermoptim</li>
+                    <li>paraview</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Traitement Audio et Visuel</h3>
+                <ul>
+                    <li>Adobe Premiere Pro</li>
+                    <li>DaVinci Resolve</li>
+                    <li>AbletonLive</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+<section id="education" class="section">
+    <h2>Parcours</h2>
+    <div class="timeline">
+        <div class="timeline-event">
+            <div class="timeline-content right">
+                <h3>Aujourd'hui</h3>
+                <h4>Water Horizon | Ingénieur Simulation Numérique</h4>
+                <p>2023 - Présent | Paris, France</p>
+                <p>
+                    Actuellement, je travaille en tant qu'ingénieur simulation numérique chez Water Horizon, où je suis chargé de développer et d'optimiser des solutions thermiques innovantes. Mon rôle consiste à modéliser les systèmes thermodynamiques complexes, à analyser les performances énergétiques des solutions proposées, et à simuler les processus de stockage et de gestion de l'énergie thermique.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="timeline-content left">
+                <h3>2022</h3>
+                <h4>Alten-SO | Stagiaire en Simulation Numérique</h4>
+                <p>2022 | Toulouse, France</p>
+                <p>
+                    Au cours de mon stage chez Alten-SO, j'ai participé à des projets de simulation numérique pour des clients de l'industrie aérospatiale et automobile. Mon travail consistait à modéliser et simuler des phénomènes physiques complexes, notamment dans le cadre de l'analyse des flux d'air autour des structures et du comportement thermique des matériaux.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="timeline-content right">
+                <h3>2021 - 2023</h3>
+                <h4>N7 Consulting | Consultant en Simulation Numérique</h4>
+                <p>2021 - 2023 | Toulouse, France</p>
+                <p>
+                    Au sein de N7 Consulting, j'ai conduit une étude numérique détaillée pour la conception d'une salle de décongélation, utilisant des outils de CAO comme Code_Saturne et Salome. Mon travail a porté sur la modélisation des écoulements d'air et l'analyse des transferts thermiques, garantissant ainsi l'efficacité et la sécurité du processus.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="timeline-content left">
+                <h3>2019 - 2021</h3>
+                <h4>Stages et Projets Académiques | ENSEEIHT & Master DET</h4>
+                <p>2019 - 2021 | Toulouse, France</p>
+                <p>
+                    Durant mon cursus à l'ENSEEIHT, complété par un double diplôme avec le Master DET, j'ai réalisé des projets tels que l'étude de la turbulence autour d'un profil d'aile d'avion, la simulation d'un système thermodynamique d'air conditionné, et la modélisation numérique du refroidissement de composants électroniques.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="timeline-content right">
+                <h3>2017 - 2021</h3>
+                <h4>Formations Académiques | ENSEEIHT & Master DET</h4>
+                <p>2017 - 2021 | Toulouse, France</p>
+                <p>
+                    Diplômé de l'ENSEEIHT avec une spécialisation en mécanique des fluides, énergétique et environnement, complété par un Master DET. Ces formations m'ont permis d'acquérir des compétences solides en modélisation et simulation numérique, en mécanique des fluides et en analyse énergétique.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projets</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Projet 1</h3>
+                    <p>Description du projet 1...</p>
+                </div>
+                <div class="project">
+                    <h3>Projet 2</h3>
+                    <p>Description du projet 2...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="interests" class="section">
+    <div class="container">
+        <h2>Hobbies</h2>
+        <div class="hobby">
+            <h3>Musicien-compositeur</h3>
+            <p>
+                La musique occupe une place centrale dans ma vie. Je joue de la guitare, du piano et du saxophone, et j'explore également la musique assistée par ordinateur (MAO) pour composer et produire mes propres morceaux. La musique me permet de m'exprimer, de me détendre, et de trouver l'inspiration dans la création artistique.
+            </p>
+        </div>
+        <div class="hobby">
+            <h3>Lecture et Philosophie</h3>
+            <p>
+                Passionné par la lecture, je m'intéresse particulièrement à la philosophie. J'aime explorer les grandes idées et les questionnements profonds qui ont façonné notre pensée à travers les siècles. La lecture est pour moi une manière de nourrir ma réflexion et de développer une perspective plus nuancée sur le monde.
+            </p>
+        </div>
+        <div class="hobby">
+            <h3>Nouvelles Technologies</h3>
+            <p>
+                Je suis fasciné par les avancées en matière de nouvelles technologies, notamment dans les domaines de l'intelligence artificielle et de l'économie. Ces sujets me passionnent car ils transforment radicalement notre société et ouvrent des possibilités illimitées pour l'avenir. Je m'efforce de rester à la pointe de ces évolutions pour comprendre et anticiper leur impact.
+            </p>
+        </div>
+        <div class="hobby">
+            <h3>Sport</h3>
+            <p>
+                Pour équilibrer mon esprit avec le corps, je pratique régulièrement la musculation et le patin à glace. Ces activités me permettent de rester en forme physiquement et de cultiver la discipline et la persévérance. Le sport est également un excellent moyen pour moi de décompresser et de maintenir une bonne santé physique et mentale.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <!-- Icône de téléphone -->
+            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22.1,15.5l-4.9-2.4c-0.5-0.2-1.2-0.1-1.6,0.3L13,15.1c-2.1-1.1-3.8-2.8-4.9-4.9l1.7-2.6c0.4-0.4,0.6-1.1,0.3-1.6L8.7,1.9
+                c-0.3-0.6-0.9-1-1.6-1H3.4C2.6,0.9,2,1.5,2,2.4c0,10.7,8.7,19.4,19.4,19.4c0.9,0,1.6-0.6,1.6-1.4v-3.6
+                C23.3,16.4,22.7,15.8,22.1,15.5z"/>
+            </svg>
+                <a href="tel:+33608918737">06.08.91.87.37</a>
+            </div>
+            <div class="contact-item">
+                <!-- Icône d'email -->
+                <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22 4H2a2 1 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm-1.4 3.16L12 12.67 3.4 7.16A1.999 1.999 0 0 1 4.68 6h14.64c.94 0 1.76.72 1.96 1.66zM4 18V8.69l7.4 5.47a1.999 1.999 0 0 0 1.2.39c.44 0 .88-.14 1.2-.39L20 8.69V18H4z"/>
+                </svg>
+                <a href="mailto:lilyantoussaint@gmail.com">lilyantoussaint@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <!-- Icône LinkedIn -->
+                <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zm-11.5 19h-2.5v-8.5h2.5v8.5zm-1.2-9.7c-.8 0-1.3-.6-1.3-1.3s.5-1.3 1.3-1.3 1.3.6 1.3 1.3-.5 1.3-1.3 1.3zm13.7 9.7h-2.5v-4.5c0-1.1-.3-1.8-1.3-1.8s-1.5.7-1.5 1.8v4.5h-2.5v-8.5h2.5v1.1c.4-.6 1.2-1.1 2.5-1.1 1.8 0 3.3 1.2 3.3 3.6v4.9z"/>
+                </svg>
+                <a href="https://www.linkedin.com/in/lilyan-toussaint-9a7312159" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</section>
+
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Lilyan Toussaint. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+@import url('variables.css');
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.0); /* Fond semi-transparent pour se confondre avec l'animation */
+    color: var(--white-color); /* Texte blanc */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Container dans le header */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 100%;
+}
+
+/* Style du texte "Lilyan Toussaint" */
+.logo {
+    font-family: 'Roboto'; /* Police élégante pour Lilyan Toussaint */
+    font-size: 2.5em; /* Augmente la taille de la police */
+    font-weight: 700; /* Pour un texte plus épais */
+    color: var(--white-color); /* Couleur du texte */
+}
+
+/* Style du bouton hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    background-color: var(--white-color); /* Barre blanche */
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Liste de navigation */
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Centre les éléments dans la ligne de navigation */
+}
+
+.nav-list .nav-item a {
+    color: var(--white-color); /* Texte blanc */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em; /* Augmente la taille de la police */
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, text-align 0.3s ease;
+    display: block; /* S'assure que chaque lien prend toute la largeur disponible */
+    text-align: center; /* Centre le texte dans le lien */
+}
+
+/* Surbrillance lors du passage de la souris */
+.nav-list .nav-item a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Surbrillance en semi-transparent */
+    transform: scale(1); /* Maintient la taille originale */
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 100%; /* S'affiche sous le header */
+        background-color: var(--primary-color); /* Couleur de fond pour le menu */
+        width: 250px;
+        padding: 10px 0;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        opacity: 0; /* Initialement invisible */
+        transform: translateX(100%); /* Masqué à droite */
+        overflow: hidden; /* Empêche les éléments de déborder du conteneur */
+        justify-content: flex-start; /* Aligne les éléments à gauche */
+    }
+
+    .nav-list.active {
+        display: flex;
+        opacity: 1; /* Devient visible */
+        transform: translateX(0); /* Glisse dans la vue */
+    }
+
+    .nav-list .nav-item a {
+        text-align: left; /* Aligne le texte à gauche */
+        padding-left: 20px; /* Ajoute un peu de marge à gauche */
+    }
+
+    .hamburger {
+        display: flex;
+        z-index: 1000; /* Au-dessus du menu pour être cliquable */
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+/* Opacité totale du header lors du défilement */
+header.opaque {
+    opacity: 1.0; /* Opacité totale */
+    background-color: var(--primary-color); /* Fond plus opaque lors du défilement */
+}

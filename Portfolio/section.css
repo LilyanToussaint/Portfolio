@@ -1,0 +1,27 @@
+@import url('variables.css');
+
+
+/* Sections avec une couleur de fond uniforme */
+.section {
+    padding: 80px 0;
+    background-color: var(--background-color); /* Couleur de fond de base */
+    color: var(--text-color); /* Couleur du texte */
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: var(--primary-color)
+}
+
+.section p, .section ul {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+

@@ -1,0 +1,8 @@
+/* Footer */
+footer {
+    background-color: var(--primary-color); /* Utilisation de la variable pour le fond du footer */
+    color: var(--white-color); /* Texte blanc */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,59 @@
+/* Section Compétences */
+#skills {
+    background-color: var(--background-color); /* Fond de la section */
+    color: var(--text-color); /* Couleur du texte */
+    padding: 60px 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes fixes */
+    gap: 20px;
+    justify-content: center; /* Centre les éléments de la grille */
+}
+
+.skill-card {
+    background-color: var(--white-color); /* Couleur de fond pour chaque carte */
+    padding: 20px 30px;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--primary-color); /* Bordure avec la couleur secondaire */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+  
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card h3 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: var(--primary-color); /* Couleur du sous-titre */
+}
+
+.skill-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-card ul li {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    color: var(--text-color); /* Couleur des éléments de la liste */
+    position: relative;
+    padding-left: 15px;
+}
+
+.skill-card ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    line-height: 1.2;
+}

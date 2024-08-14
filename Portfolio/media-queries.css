@@ -1,0 +1,24 @@
+@import url('variables.css');
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    #intro h1 {
+        font-size: 2em;
+    }
+
+    #intro h2 {
+        font-size: 1.2em;
+    }
+    .intro-buttons {
+        flex-direction: column; /* Les boutons s'empilent sur les petits écrans */
+        gap: 15px; /* Réduit l'espace entre les boutons sur les petits écrans */
+        bottom: 40px; /* Ajuste la position par rapport à la flèche */
+    }
+
+    .intro-buttons .btn {
+        width: 80%; /* Les boutons occupent plus d'espace en largeur sur les petits écrans */
+        text-align: center;
+    }
+}

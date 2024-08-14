@@ -1,0 +1,15 @@
+/* Section Hobbies */
+
+
+
+.hobby {
+    margin-bottom: 30px;
+}
+
+.hobby h3 {
+    font-size: 1.4em;
+    color: var(--primary-color); /* Couleur des sous-titres */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+

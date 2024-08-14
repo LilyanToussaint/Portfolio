@@ -1,0 +1,11 @@
+/* variables.css */
+:root {
+    --primary-color: #006ca3 ;    /* Couleur primaire */
+    --secondary-color: #002b41;  /* Couleur secondaire */
+    --tertiary-color: #006ca3;
+    --accent-color: #ffcc00;     /* Couleur d'accent */
+    --background-color: #e3f5ff; /* Couleur de fond */
+    --text-color: #333333;       /* Couleur du texte */
+    --white-color: #f9f9f9;      /* Couleur blanche */
+    --black-color: #000000;      /* Couleur noire */
+}
